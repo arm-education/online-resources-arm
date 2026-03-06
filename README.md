@@ -1,6 +1,6 @@
 # Arm Education Online Resources – GitHub Pages Site
 
-This repository contains the source code for a GitHub Pages site that aggregates and presents **Arm Education online resources**, including:
+This repository contains the source code for a GitHub Pages site that aggregates and presents [**Arm Education online resources**](https://arm-education.github.io/online-resources-arm/), including:
 
 * Courses
 * Education Kits
