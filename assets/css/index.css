@@ -65,13 +65,13 @@
 }
 
 a.button.amazon-button {
-  background-color: #28a745 !important;
+  background-color: #7233f7 !important;
   color: #fff !important;
   border: none;
 }
 
 a.button.amazon-button:hover {
-  background-color: #218838 !important;
+  background-color: #5d2fcb !important;
   color: #fff !important;
 }
 
@@ -113,12 +113,12 @@ a.button.amazon-button:hover {
 }
 
 .donation-button {
-  background-color: #007bff !important; /* bright blue */
+  background-color: #7233f7 !important;
   color: #fff !important;
   border: none;
 }
 
 .donation-button:hover {
-  background-color: #0069d9 !important;
+  background-color: #5d2fcb !important;
   color: #fff !important;
 }
