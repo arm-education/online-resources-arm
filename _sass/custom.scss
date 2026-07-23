@@ -19,6 +19,11 @@ body {
   color: #e6e6e9;
 }
 
+.header,
+.footer {
+  background: #010101;
+}
+
 a, a:link, a:visited {
   color: #7336f7;
   text-decoration: none;
@@ -43,16 +48,17 @@ a:hover {
 .course-card {
   flex: 1 1 calc(33.333% - 1.5rem);
   background-color: #211b3b;
-  border: 1px solid rgba(230, 230, 233, 0.18);
+  border: 1px solid transparent;
   border-radius: 6px;
   padding: 1.25rem;
   box-sizing: border-box;
   text-align: center;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
   box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
 
 .course-card:hover {
+  border-color: rgba(230, 230, 233, 0.18);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transform: translateY(-3px);
 }

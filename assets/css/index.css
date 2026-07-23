@@ -9,7 +9,7 @@
   font-weight: bold;
   padding: 0.75rem 1rem;
   background: #211b3b;
-  border: 1px solid rgba(230, 230, 233, 0.18);
+  border: 1px solid transparent;
   color: #e6e6e9;
   border-radius: 12px;
   cursor: pointer;
@@ -23,6 +23,7 @@
 
 .collapsible-toggle:hover {
   background: #2c254d;
+  border-color: rgba(230, 230, 233, 0.18);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
 }
 

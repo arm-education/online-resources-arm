@@ -1,7 +1,7 @@
 /* Wrapper for all filters together */
 .filter-wrapper {
   background: #211b3b;
-  border: 1px solid rgba(230, 230, 233, 0.18);
+  border: 1px solid transparent;
   border-radius: 8px;
   padding: 1.5rem;
   margin-bottom: 2rem;
