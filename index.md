@@ -1,5 +1,5 @@
 ---
-title: 'Online Resources from Arm Education'
+title: 'Teach and learn computing with Arm'
 filter: course
 layout: article
 publication-date: 2025-07-21
