@@ -25,7 +25,7 @@ publication-date: 2025-07-21
     <div class="collapsible-section">
       <!-- Section toggle button -->
       <button class="collapsible-toggle" onclick="toggleSection('{{ dataset_key }}')">
-        <span>{{ dataset_key | capitalize }}</span>
+        <span>{% if dataset_key == "kits" %}Support for educators{% else %}{{ dataset_key | capitalize }}{% endif %}</span>
         <span class="chevron">&#9660;</span>
       </button>
 
