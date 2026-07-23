@@ -27,11 +27,9 @@ courses:
 
   - title: Embedded Systems Essentials on Arm - Get Started with the micro bit
     description: |
-      "Embedded systems are everywhere–and Arm-based technologies are the industry standard. Getting started could not be easier. This hands-on course introduces the fundamentals of embedded system design and programming through interactive exercises using MicroPython and the micro:bit.
-
-You’ll explore how embedded systems work, learn to program the micro:bit using Python, and design simple interactive systems that integrate sensors, LEDs, and inputs. Along the way, you’ll develop your understanding of digital logic, analog signals, and event-driven programming while applying real-world embedded principles through fun, guided projects.
-
-By the end of the course, you’ll be able to build and test your own microcontroller-based applications and gain the foundational knowledge needed to progress to more advanced Arm-based embedded development."
+      Embedded systems are everywhere–and Arm-based technologies are the industry standard. Getting started could not be easier. This hands-on course introduces the fundamentals of embedded system design and programming through interactive exercises using MicroPython and the micro:bit.
+                    You’ll explore how embedded systems work, learn to program the micro:bit using Python, and design simple interactive systems that integrate sensors, LEDs, and inputs. Along the way, you’ll develop your understanding of digital logic, analog signals, and event-driven programming while applying real-world embedded principles through fun, guided projects.
+                    By the end of the course, you’ll be able to build and test your own microcontroller-based applications and gain the foundational knowledge needed to progress to more advanced Arm-based embedded development.
     url: 
       - https://www.edx.org/learn/computer-science/arm-education-embedded-systems-essentials-with-arm-get-started-with-the-micro-bit
       - https://www.coursera.org/learn/embedded-systems-with-arm-get-started-with-the-microbit
