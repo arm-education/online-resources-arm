@@ -63,7 +63,7 @@ publication-date: 2025-07-21
 
                   <h3 class="course-title">{{ course.title }}</h3>
                   {% if course.Subtitle %}
-                    <p style="font-size: 0.9em; color: #666;">
+                    <p class="course-subtitle">
                       {{ course.Subtitle }}
                     </p>
                   {% endif %}
@@ -119,7 +119,7 @@ publication-date: 2025-07-21
               {% endfor %}
             </div>
             <div class="no-results-message"
-              style="display:none;text-align:center;margin-top:1rem;color:#666;">
+              style="display:none;text-align:center;margin-top:1rem;">
             <p><strong>No {{ dataset_key | capitalize }} matched your filters.</strong></p>
           </div>
         </div><!-- close .course-section -->
@@ -133,7 +133,7 @@ publication-date: 2025-07-21
 
 
 <!-- No Results Message -->
-<div id="no-results" style="display: none; text-align: center; margin-top: 2rem; color: #666;">
+<div id="no-results" style="display: none; text-align: center; margin-top: 2rem;">
   <p><strong>No results found.</strong><br>Try adjusting your filters or search terms.</p>
 </div>
 
