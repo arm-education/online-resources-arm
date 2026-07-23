@@ -3,6 +3,7 @@ header:
 
 courses:
   - title: Embedded Systems Essentials with Arm - Getting Started
+    summary: Learn the foundations of embedded systems and Arm-based microcontrollers through simulator-led exercises in I/O, interrupts, timers, and peripheral control.
     description: |
       "Embedded systems are everywhere – and Arm-based technologies are the industry standard. Getting started could not be easier. This course includes instructions on how to access to an Mbed simulator (refer to the prerequisites section for more details) so you can apply your new knowledge and skills to prototype and build real-world embedded applications quickly, without the trouble or expense of sourcing hardware.
                       From the mobile, wearable, and smart devices of today to the transformative Artificial Intelligence (AI) and 5G powered Internet of Things (IoT) of the near future, embedded systems are the fundamental building blocks of our connected world. As we move from billions to trillions of intelligent, connected devices, it’s crucial that the next generation of engineers have a thorough understanding of how to rapidly build and deploy a modern embedded system solution.
@@ -26,6 +27,7 @@ courses:
     Learning Pathways : ["Embedded, IoT and Edge Computing"]
 
   - title: Embedded Systems Essentials on Arm - Get Started with the micro bit
+    summary: Build confidence with embedded programming through MicroPython and micro:bit projects using sensors, LEDs, inputs, and essential digital and analogue concepts.
     description: |
       Embedded systems are everywhere–and Arm-based technologies are the industry standard. Getting started could not be easier. This hands-on course introduces the fundamentals of embedded system design and programming through interactive exercises using MicroPython and the micro:bit.
                     You’ll explore how embedded systems work, learn to program the micro:bit using Python, and design simple interactive systems that integrate sensors, LEDs, and inputs. Along the way, you’ll develop your understanding of digital logic, analog signals, and event-driven programming while applying real-world embedded principles through fun, guided projects.
@@ -42,6 +44,7 @@ courses:
     Learning Pathways : ["Embedded, IoT and Edge Computing"]
 
   - title: Embedded Systems Essentials with Arm - Get Practical with Hardware
+    summary: Develop hands-on embedded skills with an ST Nucleo board, covering serial interfaces, peripheral programming, and real-time operating systems.
     description: |
       Embedded systems are the fundamental building blocks of our connected world, and Arm-based devices are   the industry standard. This course will provide you with the   practical skills and confidence to build your own embedded system using the popular and affordable ST Nucleo F401RE development board.
                     You can purchase all the bill of materials required for the course directly from our technology partner STMicroelectronics: https://www.st.com/content/st_com/en/campaigns/educationalplatforms/embedded-arm-edx-edu.html
@@ -62,6 +65,7 @@ courses:
     Learning Pathways : ["Embedded, IoT and Edge Computing"]
     
   - title: Build Your First Internet of Things (IoT) Application on Arm
+    summary: Explore IoT fundamentals through practical Arm-based projects spanning embedded programming, connectivity, cloud services, sensors, and real-world connected devices.
     description: |
       Arm technology powered the smartphone revolution, and now it’s helping power the Internet of Things (IoT). This online course will provide beginners with an accelerated path to gain the knowledge necessary to thrive in a world transformed by innovations in IoT.
                     You can purchase the bill of materials required for the course directly from our technology partner, STMicroelectronics: https://www.st.com/content/st_com/en/campaigns/educationalplatforms/iot-arm-edx-edu.html
@@ -85,6 +89,7 @@ courses:
     Learning Pathways : ["Embedded, IoT and Edge Computing"]
 
   - title: Introduction to Microprocessors
+    summary: Understand how processors execute programs, from the fetch-decode-execute cycle and ALU to memory, assembly, and high-level code.
     description: |
       Introduction to Microprocessors is targeted at anyone with an interest in learning the basics of computer architecture, microprocessors and CPUs.
                     Do you want to understand how the central processing unit (CPU) of a microprocessor works? How the code you type is actually executed by your computer? Presented by engineers from Arm, this course provides you with an introduction to the central components of processors including:
@@ -108,6 +113,7 @@ courses:
     Learning Pathways : ["Digital Design and SoC Integration"]
 
   - title: Computer Architecture Essentials on Arm
+    summary: Examine modern computer architecture, including pipelining, caches, out-of-order execution, and processor performance through practical labs.
     description: |
       Whether you’re downloading an app, streaming a video, or clicking a mouse, modern microprocessors are the engines powering your digital life. Arm’s 30-year-plus history of designing energy and power-efficient microprocessors helped fuel the smartphone revolution, and today from the tiniest sensors to the world's most powerful supercomputers, Arm is building the future of computing.
                     This course will provide you with a deep understanding of the architecture of modern microprocessors. We'll start your learning journey by covering the basics of computer architecture, such as definitions and a description of key components of a microprocessor.
@@ -127,6 +133,7 @@ courses:
     Learning Pathways : ["Digital Design and SoC Integration"]
 
   - title: Introduction to AI
+    summary: Gain an accessible foundation in AI, machine learning, and data science, including responsible use, PyTorch, and an image-classification project.
     description: |
       Are you curious about how artificial intelligence (AI) really works? Wondering which models power these systems, and how they impact society and the environment? Presented by engineers from Arm, this course offers a comprehensive introduction to AI, machine learning, and data science—shedding light on their historical evolution, current capabilities, and potential future developments.
                     By exploring both the technical concepts and the broader ethical, social, and environmental dilemmas, you will gain a well-rounded understanding of AI’s potential and challenges. You’ll discover how AI, machine learning, and data science interrelate; understand the fundamental algorithms, models, and frameworks; and learn how to apply these concepts in real-world scenarios. The course also addresses the pressing issue of energy consumption in AI.
@@ -157,6 +164,7 @@ courses:
     Learning Pathways : ["Machine Learning and AI"]
 
   - title: Machine Learning at the Edge on Arm- A Practical Introduction
+    summary: Learn to train, optimize, and deploy machine-learning models on Arm-based microcontrollers using TensorFlow and practical edge-inference exercises.
     description: |
       The age of machine learning has arrived! Arm technology is powering a new generation of connected devices with sophisticated sensors that can collect a vast range of environmental, spatial and audio/visual data. Typically this data is processed in the cloud using advanced machine learning tools that are enabling new applications reshaping the way we work, travel, live and play.
                     To improve efficiency and performance, developers are now looking to analyse this data directly on the source device – usually a microcontroller (we call this ‘the Edge’). But with this approach comes the challenge of implementing machine learning on devices that have constrained computing resources.
@@ -184,6 +192,7 @@ courses:
     Learning Pathways : ["Machine Learning and AI"]
 
   - title: Optimizing Generative AI on Arm Processors - From Edge to Cloud
+    summary: Learn to optimize generative-AI inference across Arm edge and cloud systems using quantization, SIMD, KleidiAI, and CPU-focused techniques.
     description: |
       This course is designed to help you optimize generative AI workloads on Arm architectures. Through practical labs and structured lectures, you will learn how to deploy AI models efficiently across different Arm-based environments, using Arm-specific techniques such as SIMD (SVE, Neon), low-bit quantization, and the optimized KleidiAI library.
                     This course consists of four modules and hands-on lab exercises:
@@ -214,6 +223,7 @@ courses:
     Learning Pathways : ["Machine Learning and AI"]
 
   - title: Teaching AI on the Edge
+    summary: Equip yourself to teach AI on resource-constrained devices through project-based approaches to model design, evaluation, privacy, and responsible deployment.
     description: |
       Mobile and edge devices are already able to deploy large language models (LLMs) in artificial intelligence (AI) applications that will have a transformational impact on society. How can academia prepare the next generation of engineers to leverage the opportunities and address the challenges presented by AI on the Edge? In this course, Dr. Catherine Breslin, an AI consultant from Cambridge UK and co-founder of Kingfisher Labs, discusses key considerations when teaching AI in higher education. 
                     Teaching AI on the Edge is designed to equip educators and learners with the knowledge and skills to successfully implement artificial intelligence in resource-constrained environments. This course blends essential theoretical foundations with practical project-based experiences, preparing you to understand, build, and effectively teach AI systems optimized for edge devices.
@@ -234,6 +244,7 @@ courses:
     Learning Pathways : ["Machine Learning and AI"]
 
   - title: Business Models for Technology Innovators
+    summary: Use technology-focused case studies to understand innovation, value creation, partnerships, and business-model choices in a changing digital economy.
     description: |
        Are you an engineer, technology innovator or just curious about the rapidly evolving landscape of what’s possible in the 4th Industrial Revolution? Learn through a series of case studies how to understand and deploy business models to capture value and maximise the opportunities of your technology passion.
                     Sparking the world’s potential and transforming lives globally requires having not just a great technical idea, but one that fits into an effective business model that captures value at scale.
@@ -263,6 +274,7 @@ courses:
     Format: ["Course"]
 
   - title: Fundamentos de sistemas embebidos con Arm - Primeros pasos
+    summary: Aprende los fundamentos de los sistemas embebidos y los microcontroladores Arm mediante ejercicios prácticos con un simulador y las interfaces esenciales.
     description: |
       Los sistemas embebidos están en todas partes, y las tecnologías basadas en Arm son el estándar del sector. Empezar no podría ser más fácil. Este curso incluye instrucciones sobre cómo acceder a un simulador Mbed (consulta la sección de requisitos previos para obtener más detalles) para que puedas aplicar tus nuevos conocimientos y habilidades para crear prototipos y aplicaciones embebidas del mundo real de forma rápida, sin los problemas o gastos de compra de hardware.
                     Desde los dispositivos móviles, portátiles e inteligentes de hoy en día hasta la transformadora Inteligencia Artificial (IA) y el Internet de las Cosas (IoT) o 5G del futuro próximo, los sistemas embebidos son los pilares fundamentales de nuestro mundo conectado. A medida que pasamos de miles de millones a billones de dispositivos inteligentes y conectados, es fundamental que la próxima generación de ingenieros conozca a fondo cómo construir e implantar rápidamente una solución moderna de sistemas embebidos.
@@ -286,6 +298,7 @@ courses:
     Learning Pathways : ["Embedded, IoT and Edge Computing"]
 
   - title: AI at the Edge on ARM - Understanding and Deploying LLMs for Mobile Devices
+    summary: Explore how to deploy and optimize large language models on Arm-powered mobile devices using compression techniques and practical edge-AI development.
     description: |
       The rapid rise of AI applications is making a transformational impact on society, reshaping our business and personal lives. In addition, the ubiquitous availability of mobile devices now able to deploy Large Language Models (LLMs) to solve real-world problems represents the next exciting evolutionary stage in the development of AI applications.
                       This course will answer three fundamental questions related to the rise of mobile AI:
@@ -314,6 +327,7 @@ courses:
     Learning Pathways : ["Machine Learning and AI"]
 
   - title: Introduction to System on Chip Design
+    summary: Understand how modern systems-on-chip are structured, designed, and fabricated, from processors and interconnects to hardware-software co-design.
     description: |
       System-on-Chip (SoC) technology is the backbone of modern smart systems - from smartphones and tablets to autonomous vehicles and embedded IoT devices. But what exactly goes into designing an SoC?
                     Introduction to System-on-Chip (SoC) offers a basic overview of how entire systems are integrated onto a single silicon chip. Starting with basic concepts and progressing through architecture, design flows, and real-world implementation, this course gives you the knowledge to understand how SoCs are structured, designed, and fabricated.
@@ -330,6 +344,7 @@ courses:
     Subtitle : ["Produced by King's College London with support from Arm Education"]
 
   - title: Introduction to Very Large-Scale Integration Design
+    summary: Follow the digital-chip journey from CMOS and logic design to verification, layout, packaging, and electronic-design automation workflows.
     description: |
       Integrated circuits (ICs) are at the heart of every electronic device we use today, from smartphones to spacecraft. But how are these tiny, powerful systems created?
                     Introduction to VLSI provides a comprehensive beginner-friendly look into the world of Very Large-Scale Integration (VLSI). You’ll follow the entire chip design journey, starting with silicon purification and wafer creation, through to digital logic, chip packaging, and modern industry tools.

@@ -67,7 +67,11 @@ publication-date: 2025-07-21
                       {{ course.Subtitle }}
                     </p>
                   {% endif %}
+                  {% if course.summary %}
+                    <p class="course-summary">{{ course.summary }}</p>
+                  {% endif %}
                   {% if course.url %}
+                    <div class="course-card__actions">
                     {% if course.url contains "[" and course.url contains "http" %}
                       {# Skip if it's malformed #}
                     {% elsif course.url.size > 0 and course.url[0] contains "http" %}
@@ -109,6 +113,7 @@ publication-date: 2025-07-21
                         </a>
                       {% endif %}
                 {% endif %}
+                    </div>
               {% endif %}
                 </div>
               {% endfor %}

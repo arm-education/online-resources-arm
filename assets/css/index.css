@@ -83,13 +83,26 @@ a.button.amazon-button:hover {
   flex: 1 1 300px; /* cards adjust nicely in the grid */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 100%;
 }
 
-.course-card .button {
+.course-summary {
+  margin: 0.75rem 0 1rem;
+  color: #4f4f4f;
+  line-height: 1.55;
+}
+
+.course-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.course-card__actions .button {
   display: inline-block;
-  margin-top: 0.5rem;
+  margin: 0;
 }
 
 .donation-button {

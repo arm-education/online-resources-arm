@@ -3,6 +3,7 @@ header:
 
 books:
   - title: Embedded Systems Fundamentals with Arm Cortex-M based Microcontrollers- A Practical Approach - Nucleo-F091RC Edition  
+    summary: A hands-on introduction to Arm Cortex-M0 embedded systems using the STM32 Nucleo-F091RC, Mbed, C programming, and peripheral projects.
     description: |
         “Embedded Systems Fundamentals with Arm Cortex-M based Microcontrollers: A Practical Approach – Nucleo-F091RC Edition” is a hands-on guide designed to introduce learners to embedded systems design using Arm Cortex-M0-based microcontrollers, specifically the STM32 Nucleo-F091RC board. The book combines foundational theory with practical lab exercises, covering essential topics such as microcontroller architecture, peripheral interfacing, GPIO, timers, interrupts, ADCs, and serial communication. Through the use of the Mbed development environment and real hardware examples, readers gain a solid understanding of embedded C programming and system-level integration, making it ideal for students, hobbyists, and professionals seeking a practical introduction to embedded systems development on Arm-based platforms.
     url: 
@@ -16,6 +17,7 @@ books:
     Learning Pathways : ["Embedded, IoT and Edge Computing"]
 
   - title: Embedded Systems Fundamentals with Arm Cortex-M based Microcontrollers- A Practical Approach - FRDM-KL25Z Edition  
+    summary: A practical introduction to Arm Cortex-M0+ embedded systems using the FRDM-KL25Z board, Mbed, C, and microcontroller experiments.
     description: |
         “Embedded Systems Fundamentals with Arm Cortex-M based Microcontrollers: A Practical Approach – FRDM-KL25Z Edition” is an educational resource that introduces readers to the core principles of embedded systems using the Arm Cortex-M0+ architecture, specifically through the NXP FRDM-KL25Z development board. This book blends theoretical concepts with hands-on experimentation, covering topics such as microcontroller architecture, GPIO, timers, interrupts, analog and digital I/O, and serial communication. Leveraging the Mbed development platform and C programming, it provides practical examples and lab exercises to reinforce learning. Ideal for students, educators, and embedded system enthusiasts, it offers a clear and accessible pathway to understanding and developing real-world embedded applications.
     url: 
@@ -29,6 +31,7 @@ books:
     Learning Pathways : ["Embedded, IoT and Edge Computing"]
 
   - title: Beginner’s Guide to Designing Embedded Systems Applications on Arm Cortex-M Microcontrollers 
+    summary: A learn-by-doing guide that takes beginners from embedded-system fundamentals to a practical smart-home device using an ST Nucleo board.
     description: |
       A Beginner’s Guide to Designing Embedded System Applications on Arm Cortex‑M Microcontrollers” by Ariel Lutenberg, Pablo Gomez, and Eric Pernia is a practical, hands-on textbook tailored for learners stepping into embedded systems and IoT development. Over twelve chapters, it adopts a learn‑by‑doing approach, guiding readers—from zero programming background—to building a fully functional smart home device (e.g. a fire alarm, motion detector, and security sensor) using the Arm Cortex‑M series and the ST Nucleo‑F429ZI board  ￼ ￼ ￼. The book methodically introduces fundamental embedded system architecture, peripheral interfacing, firmware development, and industry tools, progressively unveiling the techniques, tools, and concepts of embedded system design through incremental practical examples 
     url: 
@@ -42,6 +45,7 @@ books:
     Learning Pathways : ["Embedded, IoT and Edge Computing"]
 
   - title: Digital Signal Processing using Arm Cortex-M based Microcontrollers- Theory and Practice
+    summary: Connect DSP theory with real-time Cortex-M implementation, covering filters, transforms, and adaptive algorithms through CMSIS-DSP labs and exercises.
     description: |
       “Digital Signal Processing using Arm Cortex‑M Based Microcontrollers: Theory and Practice” by Cem Ünsalan, M. Erkin Yücel, and H. Deniz Gürhan is a university‑level textbook that bridges the gap between DSP theory and hands‑on implementation using low-cost Arm Cortex‑M microcontrollers, particularly the STM32F4 Discovery board  ￼ ￼ ￼. It introduces foundational DSP concepts—like signals and systems, sampling and anti-aliasing, FIR and IIR filter design, frequency transforms (DTFT, DFT, FFT), z-transform analysis, and adaptive filtering (LMS, NLMS)—through structured theory chapters followed by practical lab exercises . Each chapter features hands-on labs that demonstrate real-time implementations using the CMSIS‑DSP library, and end-of-chapter exercises with online solutions to reinforce learning  ￼ ￼. Designed for ECE, EE, and CS courses, this book gives students and hobbyists the confidence to implement DSP algorithms in C on resource-constrained Cortex‑M microcontrollers and apply them in real-world embedded applications.
     url:
@@ -55,6 +59,7 @@ books:
     Learning Pathways : ["Embedded, IoT and Edge Computing"]
 
   - title: Operating Systems Foundations with Linux on the Raspberry Pi 
+    summary: Learn operating-system fundamentals through GNU/Linux on Raspberry Pi, connecting core theory with practical implementation on Arm hardware.
     description: |
       At the heart of any modern computer device sits the operating system and if the device is a smartphone, IoT node, data centre server or supercomputer, then this is very likely to be Linux.
       This textbook provides a practical introduction to the foundations of modern operating systems, with a focus on GNU/Linux and the Arm platform. It explains operating systems theory and concepts but grounds them in practical use through illustrative examples of their implementation in GNU/Linux, as well as making the connection with the Arm hardware supporting the OS functionality. An ideal starting point if you want to learn about operating systems but keep a practical, real-world focus.
@@ -69,6 +74,7 @@ books:
     Learning Pathways : ["Embedded, IoT and Edge Computing"]
 
   - title: Fundamentals of System-on-Chip Design on Arm Cortex-M Microcontrollers 
+    summary: An undergraduate introduction to Cortex-M SoC design, covering processor architecture, TrustZone, CMSIS, AMBA, peripherals, and memory management.
     description: |
       This textbook aims to provide learners with an understanding of embedded systems built around Arm Cortex-M processor cores, a popular CPU architecture often used in modern low-power SoCs that target IoT applications. Readers will be introduced to the basic principles of an embedded system from a high-level hardware and software perspective and will then be taken through the fundamentals of microcontroller architectures and SoC-based designs. Along the way, key topics such as chip design, the features and benefits of Arm’s Cortex-M processor architectures (including TrustZone, CMSIS and AMBA), interconnects, peripherals and memory management are discussed.
       The material covered in this book can be considered as key background for any student intending to major in computer engineering and is suitable for use in an undergraduate course on digital design.
@@ -83,6 +89,7 @@ books:
     Learning Pathways : ["Digital Design and SoC Integration"]
 
   - title: Modern System-on-Chip Design on Arm 
+    summary: An advanced guide to Cortex-A SoC design, from memory and interconnects to validation, fabrication, energy efficiency, and SystemC modelling.
     description: |
       Textbook by Dr. David Greaves
       Discover the fundamentals and latest developments in modern SoC design using Arm Cortex-A technology as the demonstrator platform.
@@ -100,6 +107,7 @@ books:
     Learning Pathways : ["Digital Design and SoC Integration"]
 
   - title: System-on-Chip Design with Arm Cortex-M Processors 
+    summary: A reference guide for SoC and FPGA designers using Cortex-M processors, covering AMBA buses, peripherals, debug, software, and complete designs.
     description: |
       The Arm Cortex-M processors are already one of the most popular choices for loT and embedded applications, with over 45 billion chips shipped worldwide to date. Written by Arm Distinguished Engineer Joseph Yiu, this reference book takes an expert look at all the key topics that System-on-Chip (SoC) and FPGA designers need to know when incorporating Cortex-M processors into their designs.
       It discusses on-chip bus protocol specifications (AMBA, AHB, and APB), used by Arm processors and a wide range of on-chip digital components such as memory interfaces, peripherals, and debug components. Software development and advanced design considerations are also covered. It concludes with ‘Putting the system together’, a designer’s eye view of a simple microcontroller-like design based on the Cortex-M3 processor.
@@ -114,6 +122,7 @@ books:
     Learning Pathways : ["Digital Design and SoC Integration"]
 
   - title: Arm Helium Technology M-Profile Vector Extension (MVE)
+    summary: Learn Arm Helium/MVE vector programming for Cortex-M, from SIMD fundamentals and architecture to optimization and DSP or machine-learning workloads.
     description: |
       Helium brings exciting new capabilities to microcontrollers, allowing sophisticated digital signal processing or machine learning applications to be run on inexpensive, low-power devices. In the early chapters, the book introduces fundamental concepts at a very basic and accessible level, including Single Instruction Multiple Data (SIMD), vector processing, floating and fixed-point data representations, and saturation. After an overview of the MVE architecture, the instruction set is broken down into clear groups for discussion, covering subjects like pipeline structure, predication and branch handling, data processing and memory access.
       The most practical sections of the book deal with the mechanics of coding for a Helium-capable core such as the Cortex-M55, including compilation, debug and optimization. Finally, the book concludes with chapters on how to implement DSP and ML workloads.
@@ -129,6 +138,7 @@ books:
     Learning Pathways : ["Digital Design and SoC Integration"]
 
   - title: The Microprocessor- A Practical Introduction using the Arm Cortex-M0 Processor (co-published by Wiley and Arm Education)
+    summary: A beginner-friendly introduction to Cortex-M0 architecture and programming, with assembly, C, exceptions, and practical Keil µVision exercises.
     description: |
        “The Microprocessor: A Practical Introduction using the Arm Cortex M0 Processor” by Darshak S.Vasavada and S. K. Sinha is a user‑friendly guide that introduces microprocessor architecture and programming concepts through the lens of the Arm Cortex‑M0 processor. Using simplified models and real code examples in assembly and C, the book explains the Cortex‑M0 instruction set, exception model, system architecture, and microcontroller programming in a highly accessible way  ￼ ￼. Designed for beginners, it blends foundational theory with practical exercises that can be executed using the free version of Keil µVision MDK—no hardware required  ￼ ￼. With its clear structure and hands‑on labs, this 528‑page volume lays a solid foundation for advanced study in microprocessor design and embedded systems
     url: https://www.wiley.com/en-gb/The+Microprocessor%3A+A+Practical+Introduction+using+the+Arm+Cortex-M0+Processor-p-9781394245307
