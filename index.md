@@ -11,10 +11,7 @@ publication-date: 2025-07-21
 {% assign datasets = 
   "courseInformation:courses,
    educationKitInformation:kits,
-   otherResorcesInformation:resources,
-   booksInformation:books,
-   blogs:blogs,
-   workshop:workshop" | split: "," %} 
+   booksInformation:books" | split: "," %}
 
 {% for dataset in datasets %} 
   {% assign pair = dataset | split: ":" %}
