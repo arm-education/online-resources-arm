@@ -5,6 +5,7 @@
 }
 
 .search-wrapper input {
+  box-sizing: border-box;
   width: 100%;
   padding: 0.75rem 3rem 0.75rem 3rem; /* More vertical space, room for icons */
   border: 2px solid #7336f7;
@@ -38,4 +39,10 @@
   color: #999;
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .search-wrapper {
+    margin: 1.5rem 1rem;
+  }
 }

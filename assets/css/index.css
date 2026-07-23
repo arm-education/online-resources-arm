@@ -75,14 +75,7 @@ a.button.amazon-button:hover {
   color: #fff !important;
 }
 
-.course-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem; /* spacing between cards */
-}
-
 .course-card {
-  flex: 1 1 300px; /* cards adjust nicely in the grid */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -105,6 +98,12 @@ a.button.amazon-button:hover {
 .course-card__actions .button {
   display: inline-block;
   margin: 0;
+}
+
+@media (max-width: 600px) {
+  .course-card__actions .button {
+    flex: 1 1 100%;
+  }
 }
 
 .course-subtitle {

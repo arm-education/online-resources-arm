@@ -40,6 +40,10 @@
 
 /* Responsive layout for mobile */
 @media (max-width: 768px) {
+  .filter-wrapper {
+    padding: 1rem;
+  }
+
   .filter label {
     display: block;
   }

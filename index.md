@@ -54,7 +54,7 @@ publication-date: 2025-07-21
                 Access tools, webinars and other resources to enhance your teaching, learning and research outcomes.  
               </p>
             {% endif %}
-            <div class="course-grid" id="{{ dataset_key }}-grid">
+            <div class="course-card-grid" id="{{ dataset_key }}-grid">
               {% for course in group.items %}
                 <div class="course-card"
                   data-keywords="{{ course.subjects | join: ' ' }} {{ course.platform | join: ' ' }} {{ course['sw-hw'] | join: ' ' }} {{ course.level | join: ' ' }} {{ course.publisher | join: ' ' }}  {{ course.Format | join: ' ' }} {{ course["Learning Pathways"]| join: ' ' }}"

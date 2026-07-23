@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const passesFilter = matchesFilters(card, selectedFilters);
       const show = passesSearch && passesFilter;
 
-      card.style.display = show ? "block" : "none";
+      card.style.display = show ? "flex" : "none";
 
       const section = card.closest(".course-section");
       if (section) {
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 2) update sections (banners/grids)
     sectionNodes.forEach(section => {
-      const grid = section.querySelector(".course-grid");
+      const grid = section.querySelector(".course-card-grid");
       const message = section.querySelector(".no-results-message");
       const visibleCount = sectionVisibleCounts.get(section) || 0;
 
@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
         message.style.display = empty ? "block" : "none";
       }
       if (grid) {
-        grid.style.display = (visibleCount === 0) ? "none" : "flex";
+        grid.style.display = (visibleCount === 0) ? "none" : "grid";
       }
     });
 

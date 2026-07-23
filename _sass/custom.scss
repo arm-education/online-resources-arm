@@ -33,12 +33,11 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Course Grid Container */
-.course-grid {
-  display: flex;
-  flex-wrap: wrap;
+/* Course Card Grid */
+.course-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
-  justify-content: center;
   margin: 2rem auto;
   max-width: 1200px;
   padding: 0 1rem;
@@ -46,7 +45,8 @@ a:hover {
 
 /* Course Cards */
 .course-card {
-  flex: 1 1 calc(33.333% - 1.5rem);
+  min-width: 0;
+  height: 100%;
   background-color: #211b3b;
   border: 1px solid transparent;
   border-radius: 6px;
@@ -76,6 +76,12 @@ a:hover {
   color: #e6e6e9;
 }
 
+.course-section > p {
+  max-width: 75ch;
+  margin: 0 auto 1.5rem;
+  padding: 0 1rem;
+  line-height: 1.6;
+}
 
 
 /* Access Button */
@@ -104,14 +110,21 @@ a:hover {
 
 /* Responsive layout */
 @media (max-width: 900px) {
-  .course-card {
-    flex: 1 1 calc(50% - 1rem);
+  .course-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 600px) {
+  .course-card-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1.5rem auto;
+    padding: 0;
+  }
+
   .course-card {
-    flex: 1 1 100%;
+    padding: 1rem;
   }
 }
 
@@ -135,7 +148,7 @@ a:hover {
 }
 
 
-.course-grid:empty::before {
+.course-card-grid:empty::before {
   content: "No matching items.";
   color: #e6e6e9;
   font-style: italic;
@@ -164,7 +177,7 @@ a:hover {
   transition: height 0.3s ease;
 }
 
-.collapsible-content:has(.course-grid:only-child) .collapsible-spacer {
+.collapsible-content:has(.course-card-grid:only-child) .collapsible-spacer {
   height: 50px; /* or 2rem — adjust to your liking */
 }
 
