@@ -25,6 +25,24 @@ courses:
     Format: ["Course"]
     Learning Pathways : ["Embedded, IoT and Edge Computing"]
 
+- title: Embedded Systems Essentials on Arm - Get Started with the micro bit
+    description: |
+      "Embedded systems are everywhere–and Arm-based technologies are the industry standard. Getting started could not be easier. This hands-on course introduces the fundamentals of embedded system design and programming through interactive exercises using MicroPython and the micro:bit.
+
+You’ll explore how embedded systems work, learn to program the micro:bit using Python, and design simple interactive systems that integrate sensors, LEDs, and inputs. Along the way, you’ll develop your understanding of digital logic, analog signals, and event-driven programming while applying real-world embedded principles through fun, guided projects.
+
+By the end of the course, you’ll be able to build and test your own microcontroller-based applications and gain the foundational knowledge needed to progress to more advanced Arm-based embedded development."
+    url: 
+      - https://www.edx.org/learn/computer-science/arm-education-embedded-systems-essentials-with-arm-get-started-with-the-micro-bit
+      - https://www.coursera.org/learn/embedded-systems-with-arm-get-started-with-the-microbit
+    subjects: ["Embedded systems hardware & firmware"]
+    platform: ["IoT"]
+    sw-hw: ["Software"]
+    level: ["Beginner"]
+    publisher: ["Arm Education"]
+    Format: ["Course"]
+    Learning Pathways : ["Embedded, IoT and Edge Computing"]
+
   - title: Embedded Systems Essentials with Arm - Get Practical with Hardware
     description: |
       Embedded systems are the fundamental building blocks of our connected world, and Arm-based devices are   the industry standard. This course will provide you with the   practical skills and confidence to build your own embedded system using the popular and affordable ST Nucleo F401RE development board.
@@ -34,7 +52,9 @@ courses:
                     Along the way, you'll get access to practical lab exercises using the ST Nucleo F401RE board , so you can obtain real-world experience in implementing these key concepts on an Arm-based microcontroller.
                     This is the 2nd course in our Embedded Systems Essentials Program. The 1st course – Embedded Systems Essentials: Getting Started – focuses on using a simulated microcontroller using the Mbed API. In this second course, you’ll get hands-on experience working with a development board building embedded systems applications, and it can be taken independently of the first.
                     As we continue to create increasingly complex IoT applications, driven by the advances of Artificial Intelligence and 5G, the next generation of developers will need to have a practical understanding of these processes on Arm-based microcontrollers. Upon completion of this course, you will have taken your next step into the exciting future of computing.
-    url: https://www.edx.org/learn/embedded-systems/arm-education-embedded-systems-essentials-with-arm-get-practical-with-hardware
+    url: 
+      - https://www.edx.org/learn/embedded-systems/arm-education-embedded-systems-essentials-with-arm-get-practical-with-hardware
+      - https://www.coursera.org/learn/embedded-systems-on-arm-get-practical-with-hardware
     subjects: ["Embedded systems hardware & firmware", "IoT development & Mbed API"]
     platform: ["Embedded Systems"]
     sw-hw: ["Hardware"]
@@ -55,7 +75,9 @@ courses:
                     4.Connectivity and networking technologies such as Bluetooth Low Energy (BLE), LoRaWAN, ZigBee, and the IEEE 802.1 protocols
                     Cloud computing While not a requirement for this course, we recommend that learners who would like to improve their embedded systems skills (one of the essential technologies behind IoT implementations), also take our Embedded Systems Essentials on Arm edX program.
                     The Internet of Things is one of the fundamental building blocks of the next wave of computing. Forge your own career path in this connected world by enrolling in our course today!
-    url: https://www.edx.org/learn/app-development/arm-education-build-your-first-internet-of-things-iot-application-on-arm
+    url: 
+    - https://www.edx.org/learn/app-development/arm-education-build-your-first-internet-of-things-iot-application-on-arm
+    - https://www.coursera.org/learn/build-your-first-iot-application-on-arm
     subjects: ["IoT development & Mbed API"]
     platform: ["IoT"]
     sw-hw: ["Hardware"]
@@ -95,7 +117,9 @@ courses:
                     Our lab exercises will bring to life the theory discussed in the course through a range of simulation tools.
                     Along the way, we'll provide you with insights from key engineers at Arm, illustrating how and why certain design choices were made so you’ll have the real-world context behind these pivotal architectural decisions.
                     With over 250 billion Arm-based chips deployed by our vast ecosystem of partners, Arm technology is present wherever computing happens. Be a part of this thriving community and enrol in Computer Architecture Essentials on Arm today.
-    url: https://www.edx.org/learn/computer-architecture/arm-education-computer-architecture-essentials-on-arm
+    url: 
+      - https://www.edx.org/learn/computer-architecture/arm-education-computer-architecture-essentials-on-arm
+      - https://www.coursera.org/learn/computer-architecture-essentials-on-arm
     subjects: ["Arm architecture & microprocessors"]
     platform: ["Computer Architecture"]
     sw-hw: ["Software"]
@@ -228,7 +252,9 @@ courses:
                     How to assess, select and pivot to different business models
                     The convergence of technologies such as Artificial Intelligence (AI), Robotics and the Internet of Things (IoT) is driving the creation of new industries, products and services that are reshaping modern life. As a forward-looking technology innovator, you’ll need to be able to understand, evaluate and deploy appropriate business models that will take maximum advantage of these new opportunities.
                     Stay aware of the bigger picture and develop your business skills by enrolling in our course today!
-    url: https://www.edx.org/learn/business-model/arm-education-business-models-for-technology-innovators
+    url: 
+      - https://www.edx.org/learn/business-model/arm-education-business-models-for-technology-innovators
+      - https://www.coursera.org/learn/business-models-for-technology-innovators
     subjects:
       - "Business model & innovation skills"
       - "Soft skills - creativity, problem-solving"
