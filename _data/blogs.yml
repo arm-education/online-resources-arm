@@ -1,0 +1,26 @@
+header:
+  title: Blogs Information page.
+
+blogs:
+
+    - title: A lifelong circular model of education - from cradle to cradle
+      description: |
+      url:
+        - https://community.arm.com/education-hub/b/arm-education/posts/ai-for-all-from-novice-to-expert
+      subjects: ["AI fundamentals & types","Digital Signal Processing","Operating Systems and RTOS","SoC Design","VLSI Design","Robotics and Applications","Machine learning models & inference","Edge deployment techniques","Model compression/pruning/quantisation","On-chip ML / microcontrollers","Embedded systems hardware & firmware","Arm architecture & microprocessors","IoT development","Security, privacy & ethics","Soft skills: creativity, problem-solving"]
+      platform: ["Blog"]
+      sw-hw: 
+      level: ["Beginner"]
+      Format: ["Blog"]
+      Learning Pathways : ["Machine Learning and AI"]
+      
+    - title: AI for all - Arm Education launches new learning pathway from novice to expert
+      description: |
+      url:
+        - https://community.arm.com/education-hub/b/arm-education/posts/ai-for-all-from-novice-to-expert
+      subjects: ["AI fundamentals & types","Machine learning models & inference","Edge deployment techniques","Model compression/pruning/quantisation","On-chip ML / microcontrollers"]
+      platform: ["Blog"]
+      sw-hw: 
+      level: ["Beginner"]
+      Format: ["Blog"]
+      Learning Pathways : ["Machine Learning and AI"]
