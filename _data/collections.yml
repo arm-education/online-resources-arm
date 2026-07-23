@@ -3,6 +3,11 @@ collections :
     key: courses
   - dataset: educationKitInformation
     key: kits
+  - dataset: otherResorcesInformation
+    key: resources
   - dataset: booksInformation
     key: books
-
+  - dataset : blogs
+    key: blog
+  - dataset : workshop 
+    key: workshop
