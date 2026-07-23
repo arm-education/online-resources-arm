@@ -24,19 +24,14 @@ type: article
     {% assign courses = site.data.courseInformation.courses %}
     {% assign books = site.data.booksInformation.books %}
     {% assign kits = site.data.educationKitInformation.kits %}
-    {% assign resources = site.data.otherResorcesInformation.resources %} 
-    {% assign blogs = site.data.blogs.blogs %}
-    {% assign workshop = site.data.workshop.workshop %}<!-- append these section to add more data fron collectiions-->
    
-      {% assign items = courses | concat: books | concat: kits | concat: resources | concat: blogs | concat: workshop %}
-   <!-- collection.yml giving data in map format not as array hence uisng items array and adding the meta data here.-->
+      {% assign items = courses | concat: books | concat: kits %}
 
       {% if items %}
   <h2>{{ key | capitalize }}</h2>
   <div class="filter-wrapper" data-dataset="{{ key }}">
     {% for filterType in filtersToShow %}
       {%- assign options = "" | split: "" -%}
-      {%- assign hidden_format_options = "Blog,Resources,Workshop" | split: "," -%}
 
       {%- for item in items -%}
         {%- assign raw = item[filterType] -%}
@@ -59,10 +54,8 @@ type: article
           {%- for v in values -%}
             {%- assign val = v | strip -%}
             {%- if val and val != '' -%}
-              {%- unless filterType == "Format" and hidden_format_options contains val -%}
-                {%- unless options contains val -%}
-                  {%- assign options = options | push: val -%}
-                {%- endunless -%}
+              {%- unless options contains val -%}
+                {%- assign options = options | push: val -%}
               {%- endunless -%}
             {%- endif -%}
           {%- endfor -%}
