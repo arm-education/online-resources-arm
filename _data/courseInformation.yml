@@ -25,7 +25,7 @@ courses:
     Format: ["Course"]
     Learning Pathways : ["Embedded, IoT and Edge Computing"]
 
-- title: Embedded Systems Essentials on Arm - Get Started with the micro bit
+  - title: Embedded Systems Essentials on Arm - Get Started with the micro bit
     description: |
       "Embedded systems are everywhere–and Arm-based technologies are the industry standard. Getting started could not be easier. This hands-on course introduces the fundamentals of embedded system design and programming through interactive exercises using MicroPython and the micro:bit.
 
@@ -76,8 +76,8 @@ By the end of the course, you’ll be able to build and test your own microcontr
                     Cloud computing While not a requirement for this course, we recommend that learners who would like to improve their embedded systems skills (one of the essential technologies behind IoT implementations), also take our Embedded Systems Essentials on Arm edX program.
                     The Internet of Things is one of the fundamental building blocks of the next wave of computing. Forge your own career path in this connected world by enrolling in our course today!
     url: 
-    - https://www.edx.org/learn/app-development/arm-education-build-your-first-internet-of-things-iot-application-on-arm
-    - https://www.coursera.org/learn/build-your-first-iot-application-on-arm
+      - https://www.edx.org/learn/app-development/arm-education-build-your-first-internet-of-things-iot-application-on-arm
+      - https://www.coursera.org/learn/build-your-first-iot-application-on-arm
     subjects: ["IoT development & Mbed API"]
     platform: ["IoT"]
     sw-hw: ["Hardware"]
