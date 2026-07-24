@@ -748,7 +748,8 @@ body.catalog-sheet-open {
   min-height: 100%;
   padding: clamp(1.35rem, 2.25cqi, 1.75rem);
   background: var(--catalog-surface);
-  border: 1px solid var(--catalog-line);
+  /* Keep the card footprint stable while reserving the border for hover. */
+  border: 1px solid transparent;
   border-radius: 0.875rem;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.025);
   transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
