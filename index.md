@@ -42,12 +42,29 @@ publication-date: 2025-07-21
 
         <div class="resource-card-grid">
           {%- for resource in items -%}
+            {%- assign canonical_subjects = "" | split: "" -%}
+            {%- for catalog_subject in site.data.catalogSubjects.subjects -%}
+              {%- assign subject_matches = false -%}
+              {%- for source_subject in resource.subjects -%}
+                {%- if catalog_subject.source_labels contains source_subject -%}
+                  {%- assign subject_matches = true -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- if catalog_subject.title_additions contains resource.title -%}
+                {%- assign subject_matches = true -%}
+              {%- endif -%}
+              {%- if subject_matches -%}
+                {%- unless canonical_subjects contains catalog_subject.label -%}
+                  {%- assign canonical_subjects = canonical_subjects | push: catalog_subject.label -%}
+                {%- endunless -%}
+              {%- endif -%}
+            {%- endfor -%}
             <article
               class="resource-card"
               data-resource-card
               data-title="{{ resource.title | downcase | escape }}"
               data-description="{{ resource.description | strip_html | downcase | escape }}"
-              data-facets='{"subjects":{{ resource.subjects | jsonify | escape }},"level":{{ resource.level | jsonify | escape }},"format":{{ resource.Format | jsonify | escape }},"pathways":{{ resource["Learning Pathways"] | jsonify | escape }}}'>
+              data-facets='{"subjects":{{ canonical_subjects | jsonify | escape }},"level":{{ resource.level | jsonify | escape }},"format":{{ resource.Format | jsonify | escape }},"pathways":{{ resource["Learning Pathways"] | jsonify | escape }}}'>
               <h3 class="resource-card__title">{{ resource.title }}</h3>
 
               {%- if resource.Subtitle -%}
@@ -67,13 +84,17 @@ publication-date: 2025-07-21
                       {%- assign domain = link | split: "/" | slice: 2, 1 | first -%}
                       {%- assign parts = domain | split: "." | reverse -%}
                       {%- assign site_name = parts[1] | capitalize -%}
+                      {%- assign button_class = "resource-button" -%}
+                      {%- unless forloop.first -%}
+                        {%- assign button_class = button_class | append: " resource-button--secondary" -%}
+                      {%- endunless -%}
 
                       {%- if resource.title contains "Arm Development Studio" -%}
-                        <a class="resource-button" href="{{ link }}" target="_blank" rel="noopener noreferrer">Request donation</a>
+                        <a class="{{ button_class }}" href="{{ link }}" target="_blank" rel="noopener noreferrer">Request donation</a>
                       {%- elsif link contains "amazon" -%}
-                        <a class="resource-button" href="{{ link }}" target="_blank" rel="noopener noreferrer">Buy from Amazon</a>
+                        <a class="{{ button_class }}" href="{{ link }}" target="_blank" rel="noopener noreferrer">Buy from Amazon</a>
                       {%- else -%}
-                        <a class="resource-button" href="{{ link }}" target="_blank" rel="noopener noreferrer">Access via {{ site_name }}</a>
+                        <a class="{{ button_class }}" href="{{ link }}" target="_blank" rel="noopener noreferrer">Access via {{ site_name }}</a>
                       {%- endif -%}
                     {%- endfor -%}
                   {%- else -%}

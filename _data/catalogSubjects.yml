@@ -1,0 +1,54 @@
+subjects:
+  - label: "Embedded systems & IoT"
+    source_labels:
+      - "Embedded systems hardware & firmware"
+      - "IoT development"
+      - "IoT development & Mbed API"
+    title_additions: []
+    expected_count: 13
+
+  - label: "Computer architecture & processors"
+    source_labels:
+      - "Arm architecture & microprocessors"
+    title_additions:
+      - "Introduction to Computer Architecture"
+    expected_count: 6
+
+  - label: "AI & machine learning"
+    source_labels:
+      - "AI fundamentals & types"
+      - "Machine learning models & inference"
+      - "Edge deployment techniques"
+      - "Model compression/pruning/quantisation"
+      - "On-chip ML / microcontrollers"
+    title_additions: []
+    expected_count: 5
+
+  - label: "SoC & digital design"
+    source_labels:
+      - "SoC Design"
+      - "VLSI Design"
+    title_additions: []
+    expected_count: 11
+
+  - label: "Operating systems & RTOS"
+    source_labels:
+      - "Operating Systems and RTOS"
+    title_additions:
+      - "Real-Time Operating Systems Design and Programming"
+    expected_count: 3
+
+  - label: "Signal processing, graphics & robotics"
+    source_labels:
+      - "Digital Signal Processing"
+      - "Robotics and Applications"
+    title_additions: []
+    expected_count: 4
+
+  - label: "Responsible technology & innovation"
+    source_labels:
+      - "Security, privacy & ethics"
+      - "Business model & innovation skills"
+      - "Soft skills - creativity, problem-solving"
+    title_additions: []
+    expected_count: 3

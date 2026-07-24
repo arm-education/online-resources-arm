@@ -23,88 +23,131 @@ type: article
     {%- assign _catalog_items = _courses | concat: _books | concat: _kits -%}
 
     <section class="resource-catalog" data-resource-catalog aria-label="Arm Education resources">
-      <div class="resource-catalog__search">
-        <label class="resource-catalog__visually-hidden" for="course-search">Search resources</label>
-        <i class="fas fa-search resource-catalog__search-icon" aria-hidden="true"></i>
-        <input type="search" id="course-search" placeholder="Search resources" autocomplete="off" />
-        <button class="resource-catalog__clear-search" id="clear-search" type="button" aria-label="Clear search" hidden>
-          <i class="fas fa-times" aria-hidden="true"></i>
-        </button>
-      </div>
-
-      <div class="resource-catalog__summary-row">
-        <p class="resource-catalog__summary" id="resource-count" role="status" aria-live="polite">
-          Showing {{ _catalog_items | size }} resources
-        </p>
-      </div>
-
-      <div class="resource-catalog__active-filters" id="active-filters" role="group" aria-label="Active filters" hidden>
-        <span class="resource-catalog__active-label">Active filters</span>
-        <div class="resource-catalog__chips" id="active-filter-chips"></div>
-        <button class="resource-catalog__clear-all" type="button" data-clear-filters>Clear all filters</button>
-      </div>
-
       <div class="resource-catalog__layout">
-        <aside class="resource-catalog__filters" aria-label="Filter resources">
-          <details class="catalog-filter-panel" id="catalog-filter-panel">
-            <summary>
-              <span>Filters</span>
-              <span class="catalog-filter-panel__count" id="filter-selection-count"></span>
-              <i class="fas fa-chevron-down" aria-hidden="true"></i>
-            </summary>
+        <div class="resource-catalog__search">
+          <label class="resource-catalog__visually-hidden" for="course-search">Search resources</label>
+          <i class="fas fa-search resource-catalog__search-icon" aria-hidden="true"></i>
+          <input type="search" id="course-search" placeholder="Search resources" autocomplete="off" />
+          <button class="resource-catalog__clear-search" id="clear-search" type="button" aria-label="Clear search" hidden>
+            <i class="fas fa-times" aria-hidden="true"></i>
+          </button>
+        </div>
 
-            <form class="catalog-filter-form" id="resource-filters">
-              {%- assign _facet_definitions = "subjects|subjects|Subjects,level|level|Level,format|Format|Format,pathways|Learning Pathways|Learning pathways" | split: "," -%}
-              {%- for _facet_definition in _facet_definitions -%}
-                {%- assign _facet_parts = _facet_definition | split: "|" -%}
-                {%- assign _facet_id = _facet_parts[0] -%}
-                {%- assign _facet_data_key = _facet_parts[1] -%}
-                {%- assign _facet_label = _facet_parts[2] -%}
-                {%- assign _facet_options = "" | split: "" -%}
+        <div class="resource-catalog__summary-row">
+          <p class="resource-catalog__summary" id="resource-count" role="status" aria-live="polite">
+            Showing {{ _catalog_items | size }} resources
+          </p>
+          <button
+            class="resource-catalog__filter-trigger"
+            id="catalog-filter-trigger"
+            type="button"
+            aria-haspopup="dialog"
+            aria-controls="catalog-filter-dialog"
+          >
+            <i class="fas fa-sliders-h" aria-hidden="true"></i>
+            <span>Filters</span>
+            <span class="resource-catalog__selection-count" data-filter-selection-count hidden></span>
+          </button>
+        </div>
 
-                {%- for _item in _catalog_items -%}
-                  {%- for _value in _item[_facet_data_key] -%}
-                    {%- assign _option = _value | strip -%}
-                    {%- if _option != "" and _option != nil -%}
-                      {%- unless _facet_options contains _option -%}
-                        {%- assign _facet_options = _facet_options | push: _option -%}
-                      {%- endunless -%}
-                    {%- endif -%}
+        <div class="resource-catalog__active-filters" id="active-filters" role="group" aria-label="Active filters" hidden>
+          <span class="resource-catalog__active-label">Active filters</span>
+          <div class="resource-catalog__chips" id="active-filter-chips"></div>
+          <button class="resource-catalog__clear-all" type="button" data-clear-filters>Clear all filters</button>
+        </div>
+
+        <aside class="resource-catalog__filters" aria-labelledby="catalog-filter-sidebar-title">
+          <div class="catalog-filter-panel">
+            <div class="catalog-filter-panel__header">
+              <div class="catalog-filter-panel__heading">
+                <h2 id="catalog-filter-sidebar-title">Filter resources</h2>
+                <span class="catalog-filter-panel__count" data-filter-selection-count hidden></span>
+              </div>
+              <button class="catalog-filter-panel__clear" type="button" data-clear-filters>Clear all</button>
+            </div>
+
+            <div id="catalog-filter-sidebar-host">
+              <form class="catalog-filter-form" id="resource-filters" aria-label="Resource filters">
+                <details class="catalog-filter-group" open>
+                  <summary>
+                    <span>Subjects</span>
+                    <span class="catalog-filter-group__selected-count" data-facet-selected-count="subjects" hidden></span>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                  </summary>
+                  <fieldset>
+                    <legend class="resource-catalog__visually-hidden">Filter by Subjects</legend>
+                    <div class="catalog-filter-group__options">
+                      {%- for _catalog_subject in site.data.catalogSubjects.subjects -%}
+                        {%- assign _option_id = _catalog_subject.label | slugify | append: '-' | append: forloop.index -%}
+                        <label class="catalog-filter-option" data-filter-option>
+                          <input
+                            id="filter-subjects-{{ _option_id }}"
+                            type="checkbox"
+                            class="filter-checkbox"
+                            data-facet="subjects"
+                            data-legacy-values='{{ _catalog_subject.source_labels | jsonify | escape }}'
+                            value="{{ _catalog_subject.label | escape }}"
+                          >
+                          <span class="catalog-filter-option__label">{{ _catalog_subject.label }}</span>
+                          <span class="catalog-filter-option__count" data-option-count>{{ _catalog_subject.expected_count }}</span>
+                        </label>
+                      {%- endfor -%}
+                    </div>
+                  </fieldset>
+                </details>
+
+                {%- assign _facet_definitions = "level|level|Level,format|Format|Format,pathways|Learning Pathways|Learning pathways" | split: "," -%}
+                {%- for _facet_definition in _facet_definitions -%}
+                  {%- assign _facet_parts = _facet_definition | split: "|" -%}
+                  {%- assign _facet_id = _facet_parts[0] -%}
+                  {%- assign _facet_data_key = _facet_parts[1] -%}
+                  {%- assign _facet_label = _facet_parts[2] -%}
+                  {%- assign _facet_options = "" | split: "" -%}
+
+                  {%- for _item in _catalog_items -%}
+                    {%- for _value in _item[_facet_data_key] -%}
+                      {%- assign _option = _value | strip -%}
+                      {%- if _option != "" and _option != nil -%}
+                        {%- unless _facet_options contains _option -%}
+                          {%- assign _facet_options = _facet_options | push: _option -%}
+                        {%- endunless -%}
+                      {%- endif -%}
+                    {%- endfor -%}
                   {%- endfor -%}
-                {%- endfor -%}
 
-                {%- if _facet_options.size > 0 -%}
-                  <details class="catalog-filter-group" open>
-                    <summary>
-                      <span>{{ _facet_label }}</span>
-                      <span class="catalog-filter-group__selected-count" data-facet-selected-count="{{ _facet_id }}" hidden></span>
-                      <i class="fas fa-chevron-down" aria-hidden="true"></i>
-                    </summary>
-                    <fieldset>
-                      <legend class="resource-catalog__visually-hidden">Filter by {{ _facet_label }}</legend>
-                      <div class="catalog-filter-group__options">
-                        {%- assign _facet_options = _facet_options | sort -%}
-                        {%- for _option in _facet_options -%}
-                          {%- assign _option_id = _option | slugify | append: '-' | append: forloop.index -%}
-                          <label class="catalog-filter-option" data-filter-option>
-                            <input
-                              id="filter-{{ _facet_id }}-{{ _option_id }}"
-                              type="checkbox"
-                              class="filter-checkbox"
-                              data-facet="{{ _facet_id }}"
-                              value="{{ _option | escape }}"
-                            >
-                            <span class="catalog-filter-option__label">{{ _option }}</span>
-                            <span class="catalog-filter-option__count" data-option-count>0</span>
-                          </label>
-                        {%- endfor -%}
-                      </div>
-                    </fieldset>
-                  </details>
-                {%- endif -%}
-              {%- endfor -%}
-            </form>
-          </details>
+                  {%- if _facet_options.size > 0 -%}
+                    <details class="catalog-filter-group" open>
+                      <summary>
+                        <span>{{ _facet_label }}</span>
+                        <span class="catalog-filter-group__selected-count" data-facet-selected-count="{{ _facet_id }}" hidden></span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                      </summary>
+                      <fieldset>
+                        <legend class="resource-catalog__visually-hidden">Filter by {{ _facet_label }}</legend>
+                        <div class="catalog-filter-group__options">
+                          {%- assign _facet_options = _facet_options | sort -%}
+                          {%- for _option in _facet_options -%}
+                            {%- assign _option_id = _option | slugify | append: '-' | append: forloop.index -%}
+                            <label class="catalog-filter-option" data-filter-option>
+                              <input
+                                id="filter-{{ _facet_id }}-{{ _option_id }}"
+                                type="checkbox"
+                                class="filter-checkbox"
+                                data-facet="{{ _facet_id }}"
+                                value="{{ _option | escape }}"
+                              >
+                              <span class="catalog-filter-option__label">{{ _option }}</span>
+                              <span class="catalog-filter-option__count" data-option-count>0</span>
+                            </label>
+                          {%- endfor -%}
+                        </div>
+                      </fieldset>
+                    </details>
+                  {%- endif -%}
+                {%- endfor -%}
+              </form>
+            </div>
+          </div>
         </aside>
 
         <div class="resource-catalog__results">
@@ -120,6 +163,26 @@ type: article
           </section>
         </div>
       </div>
+
+      <dialog class="catalog-filter-sheet" id="catalog-filter-dialog" aria-labelledby="catalog-filter-dialog-title">
+        <div class="catalog-filter-sheet__panel">
+          <header class="catalog-filter-sheet__header">
+            <h2 id="catalog-filter-dialog-title">Filter resources</h2>
+            <div class="catalog-filter-sheet__header-actions">
+              <button class="catalog-filter-sheet__clear" type="button" data-clear-filters>Clear all</button>
+              <button class="catalog-filter-sheet__close" type="button" data-close-filter-sheet aria-label="Close filters">
+                <i class="fas fa-times" aria-hidden="true"></i>
+              </button>
+            </div>
+          </header>
+          <div class="catalog-filter-sheet__body" id="catalog-filter-sheet-host"></div>
+          <footer class="catalog-filter-sheet__footer">
+            <button type="button" data-close-filter-sheet>
+              Show <span data-sheet-result-count>{{ _catalog_items | size }}</span> resources
+            </button>
+          </footer>
+        </div>
+      </dialog>
     </section>
   {%- else -%}
     <div class="article__content" itemprop="articleBody">{{ content }}</div>
