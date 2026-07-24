@@ -2,6 +2,7 @@
 title: 'Teach and learn computing with Arm'
 filter: course
 layout: article
+full_width: true
 publication-date: 2025-07-21
 ---
 
@@ -46,7 +47,7 @@ publication-date: 2025-07-21
               data-resource-card
               data-title="{{ resource.title | downcase | escape }}"
               data-description="{{ resource.description | strip_html | downcase | escape }}"
-              data-facets='{"subjects":{{ resource.subjects | jsonify | escape }},"level":{{ resource.level | jsonify | escape }},"format":{{ resource.Format | jsonify | escape }},"pathways":{{ resource["Learning Pathways"] | jsonify | escape }}'>
+              data-facets='{"subjects":{{ resource.subjects | jsonify | escape }},"level":{{ resource.level | jsonify | escape }},"format":{{ resource.Format | jsonify | escape }},"pathways":{{ resource["Learning Pathways"] | jsonify | escape }}}'>
               <h3 class="resource-card__title">{{ resource.title }}</h3>
 
               {%- if resource.Subtitle -%}

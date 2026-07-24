@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const activeFilterChips = catalog.querySelector("#active-filter-chips");
   const filterSelectionCount = catalog.querySelector("#filter-selection-count");
   const emptyState = catalog.querySelector("#no-results");
-  const facetById = new Map(facetDefinitions.map((facet) => [facet.id, facet]));
   let searchTimer;
   let previousSidebarMode = null;
 
@@ -208,7 +207,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const icon = document.createElement("span");
         icon.setAttribute("aria-hidden", "true");
-        icon.textContent = "×";
+        icon.textContent = "\u00d7";
         chip.append(icon);
         activeFilterChips.append(chip);
       });
