@@ -17,7 +17,9 @@ courses:
                       Industry-standard Arm-based microcontroller architecture, their features and programming models.
                       The possibilities for future IoT development and connection are enormous. In order to achieve this vision of the future, many engineers and developers will be needed to imagine and design these connected devices and the technologies they are built on.
                       The world of embedded systems is your doorway into the IoT, and all the opportunities it has to offer."
-    url: https://www.edx.org/learn/embedded-systems/arm-education-embedded-systems-essentials-with-arm-getting-started
+    url: 
+      - https://www.edx.org/learn/embedded-systems/arm-education-embedded-systems-essentials-with-arm-getting-started
+      - https://www.coursera.org/learn/embedded-systems-with-arm-get-started-with-the-microbit
     subjects: ["Embedded systems hardware & firmware"]
     platform: ["IoT"]
     sw-hw: ["Software"]
